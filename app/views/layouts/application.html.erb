@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-width">
+      <nav>
+        <ul id='nav-list'>
+          <div>
+            <li><%= image_tag "logo.png", alt: "List Logo", width: 50 %></li>
+          </div>
+          <div id='nav-items'>
+            <li><%= link_to "View All", lists_path %></li>
+            <li class='button'><%= link_to "New List", new_list_path %>
+          </div>
+        </ul>
+      </nav>
+      <%= yield %>
+      <%# <div class="placeholder"></div> %>
+    </div>
   </body>
 </html>

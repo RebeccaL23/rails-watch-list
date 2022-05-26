@@ -10,3 +10,40 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+nav{
+
+}
+#nav-list {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+  margin-top: 10px;
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  #nav-items{
+    margin-right: 10px;
+  }
+
+  .button{
+    border-radius: 25px;
+    background-color: rgb(255, 203, 212);
+    color: #fff;
+    padding: 10px 30px;
+
+    &:active{
+      color: #fff;
+    }
+    &:focus{
+      color: #fff;
+    }
+  }
+}
