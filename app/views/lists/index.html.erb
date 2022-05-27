@@ -13,7 +13,7 @@
   <%@lists.each do |list| %>
     <div class="card-product">
       <%# <img src="https://source.unsplash.com/random/?movies" /> %>
-      <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+      <%= list.photo.attached? ? (cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill) : (image_tag "https://source.unsplash.com/random/?movies") %>
       <div class='card-product-infos'>
           <h2><%= list.name %></h2>
           <%= link_to "View list", list_path(list) %>
