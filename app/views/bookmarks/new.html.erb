@@ -2,7 +2,7 @@
 
 <%= simple_form_for [@list, @bookmark] do |f| %>
  <%= f.input :comment %>
- <%#= f.input :movie_id, collection: @movies %>
+ <%# <% = f.input :movie_id, collection: @movies %>
  <%= f.association :movie, collection: @list.other_movies.order(:title) %>
  <%= f.button :submit %>
 <% end %>

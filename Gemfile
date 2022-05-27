@@ -73,3 +73,7 @@ gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails" # Uncomment this line
 
 gem 'uri', '~> 0.10.0'
+
+gem "cloudinary"
+
+gem "dotenv-rails", groups: [:development, :test]

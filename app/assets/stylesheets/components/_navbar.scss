@@ -35,11 +35,11 @@ nav{
     margin-right: 10px;
   }
 
-  .button{
+  .button, li:last-child a{
     border-radius: 25px;
     background-color: rgb(17, 0, 255);
     color: #fff;
-    padding: 10px 30px;
+    padding: 10px 25px;
 
     &:active{
       color: #fff;
@@ -47,5 +47,9 @@ nav{
     &:focus{
       color: #fff;
     }
+  }
+  li:first-child{
+    margin-right: 20px;
+    color: rgb(17, 0, 255);
   }
 }
