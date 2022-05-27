@@ -70,3 +70,15 @@
 .list{
   padding: 0 !important;
 }
+
+.list-hero{
+  padding-top: 100px;
+  text-align: center;
+
+  a {
+    border-radius: 25px;
+    background-color: rgb(17, 0, 255);
+    color: #fff;
+    padding: 10px 30px;
+  }
+}

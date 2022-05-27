@@ -18,7 +18,10 @@ class BookmarksController < ApplicationController
   end
 
   def destroy
-
+    # @bookmark = Bookmark.find(params[:id])
+    # @bookmark.destroy
+    # # No need for app/views/restaurants/destroy.html.erb
+    # redirect_to list_path(@list), status: :see_other # give HTTP status to indicate that the index page is provided with the other resources (minus the removed one)
   end
 
   def show
