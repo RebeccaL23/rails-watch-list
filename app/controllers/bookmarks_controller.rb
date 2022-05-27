@@ -9,7 +9,7 @@ class BookmarksController < ApplicationController
     # raise
     @bookmark = Bookmark.create(bookmark_params)
     @bookmark.list = @list
-
+    # raise
     if @bookmark.save!
       redirect_to list_path(@list), notice: "Bookmark added"
     else

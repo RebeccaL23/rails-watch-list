@@ -12,7 +12,9 @@
 }
 
 nav{
-
+  position:fixed;
+  width: 98%;
+  left: 1%;
 }
 #nav-list {
   display: inline-block;
@@ -35,7 +37,7 @@ nav{
 
   .button{
     border-radius: 25px;
-    background-color: rgb(255, 203, 212);
+    background-color: rgb(17, 0, 255);
     color: #fff;
     padding: 10px 30px;
 

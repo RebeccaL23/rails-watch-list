@@ -1,13 +1,19 @@
-<h1>Lists</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/random/?movies);">
+  <div class="container">
+    <h1>Movie Lists</h1>
+    <br>
+    <%= link_to "Add new list", new_list_path %>
+  </div>
+</div>
 
-<%= link_to "Add new list", new_list_path %>
-
-<ul id='list-list' class='list'>
+<ul class='list'>
   <%@lists.each do |list| %>
-    <div class='card'>
-      <li class='list-item'>
-        <h1><%= link_to list.name, list_path(list) %></h1>
-      </li>
+    <div class="card-product">
+      <img src="https://source.unsplash.com/random/?movies" />
+      <div class='card-product-infos'>
+          <h2><%= list.name %></h2>
+          <%= link_to "View list", list_path(list) %>
+      </div>
     </div>
   <% end %>
 </ul>
